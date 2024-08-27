@@ -1,0 +1,24 @@
+h1 {
+    text-align: center;
+}
+
+.grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.kategori_knap {
+    border: solid;
+    border-color: aqua;
+    padding: 1em;
+    margin: 1em;
+}
+
+
+@media (min-width: 800px) {
+    .grid_1-1-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1em;
+    }
+}
