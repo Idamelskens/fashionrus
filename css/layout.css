@@ -1,0 +1,14 @@
+header {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+p {
+    font-family: sans-serif;
+    margin-bottom: 1.563rem;
+    
+}
+
+.productlist article {
+    font-size: 0.9rem;
+}
