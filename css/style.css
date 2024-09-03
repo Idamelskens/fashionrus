@@ -6,40 +6,47 @@ h1 {
 
 h3 {
     font-family: sans-serif;
-    line-height: 1.2;
+    /* line-height: 1.2; */
 }
 
 .subtle {
     color: rgb(189, 184, 184);
 }
 
-ol {
-    list-style: decimal outside;
+
+ul {
+    list-style: none;
 }
 
-.product main img {
-    grid-column: 1 / -1;
-}
 
 h2 {
     font-family: sans-serif;
-    margin: 1%;
+    /* margin: 1%; */
     font-size: 2.441rem;
-    line-height: 1.2;
+    /* line-height: 1.2; */
 }
 
-.purchaseBox {
-    background: gray;
-    color: white;
-    padding: 1rem;
-}
+
 
 img {
-    max-width: 100%;
+    max-width: 50%;
     display: block;
     height: auto;
 }
 
+.productlist article .discounted {
+    display: none;
+}
+
+.productlist article.onSale .discounted {
+    display: flex;
+    justify-content: space-between;
+}
+
+.discounted p:last-child {
+    background: red;
+    padding: 0.2rem;
+}
 
 li {
     list-style-position: inside;
@@ -67,12 +74,25 @@ a {
 
 .mainnav h1 {
     margin-right: auto;
+    font-size: 150px;
 }
 
 .grid_1-1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 5em;
 }
+
+.grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.purchaseBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 
 .kategori_knap {
     border: solid;
@@ -88,9 +108,16 @@ a {
     box-sizing: border-box;
 }
 
-.productlist article {
-    display: flex;
-    flex-direction: column;
+.soldOut {
+    filter: grayscale(1);
+}
+
+.soldOut::before {
+    content: "Sold Out";
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 1rem;
 }
 
 

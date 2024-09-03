@@ -3,6 +3,10 @@ header {
     unicode-bidi: isolate;
 }
 
+body {
+    background-color: rgb(253, 243, 217);
+}
+
 p {
     font-family: sans-serif;
     margin-bottom: 1.563rem;
@@ -11,4 +15,12 @@ p {
 
 .productlist article {
     font-size: 0.9rem;
+}
+
+.productlist article.soldout img {
+    opacity: 0.5;
+}
+
+dl {
+    font-family: sans-serif;
 }
